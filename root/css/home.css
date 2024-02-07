@@ -1,0 +1,624 @@
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 200px;
+}
+
+.content1-pic {
+    position: relative;
+    margin-right: 120px;
+}
+
+.content1-text {
+    filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+}
+
+.square1, .square2, .square3, .square4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    position: absolute;
+    filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+    filter: blur(5px);
+}
+
+.square1 {
+    background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
+    top: -120px;
+    left: -120px;
+}
+
+.square2 {
+    background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
+    top: -120px;
+    right: -120px;
+}
+
+.square3 {
+    background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
+    bottom: -120px;
+    left: -120px;
+}
+
+.square4 {
+    background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
+    bottom: -120px;
+    right: -120px;
+}
+
+.my-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+
+
+
+
+
+
+
+
+
+/*Content 2*/
+.content2 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+}
+.project-classification {
+    border: 1px solid var(--black);
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.project-classification-active {
+    border:none;
+    background: var(--blue);
+    color: var(--white);
+}
+.projects-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+.project {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    background: var(--white);
+    filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+    cursor: pointer;
+}
+.proj-pic {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.proj-tags-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+.proj-tag {
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+}
+
+
+
+
+
+/*Content 3*/
+.content3 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+}
+.about-me-cont1 {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+.abount-me-desc1 {
+    width: 800px;
+    text-align: justify;
+    font-size: 20px;
+}
+.about-me-pfp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    
+}
+.about-me-cont2 {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+.exp-pfp {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+    background: aliceblue;
+}
+.skill-box {
+    display: flex;
+    gap: 30px;
+}
+.exp-txt {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    font-size: var(--txt-l3);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1600px) {
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 150px;
+    }
+
+
+
+
+    /*For Content 2(Projects)*/
+    .project {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 450px;
+        height: 450px;
+        border-radius: 30px;
+        background: var(--white);
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        cursor: pointer;
+    }
+    .proj-pic {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 80px;
+    }
+
+
+
+
+    /*For Content 2(Projects)*/
+    .project {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 400px;
+        height: 400px;
+        border-radius: 30px;
+        background: var(--white);
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        cursor: pointer;
+    }
+    .proj-pic {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+
+
+    /*For About me*/
+    .abount-me-desc1 {
+        width: 600px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1366px) {
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 80px;
+    }
+
+    .square1, .square2, .square3, .square4 {
+        width: 180px; /*From 200*/
+        height: 180px; /*From 200*/
+        border-radius: 30px;
+        position: absolute;
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        filter: blur(5px);
+    }
+    
+    .square1 {
+        background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
+        top: -120px;
+        left: -120px;
+    }
+    
+    .square2 {
+        background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
+        top: -120px;
+        right: -120px;
+    }
+    
+    .square3 {
+        background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
+        bottom: -120px;
+        left: -120px;
+    }
+    
+    .square4 {
+        background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
+        bottom: -120px;
+        right: -120px;
+    }
+    
+    .my-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 450px; /*From 500*/
+        height: 450px; /*From 500*/
+        border-radius: 30px;
+        overflow: hidden;
+        
+    }
+
+
+
+
+    /*For Content 2(Projects)*/
+    .project {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 380px;
+        height: 380px;
+        border-radius: 30px;
+        background: var(--white);
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        cursor: pointer;
+    }
+    .proj-pic {
+        width: 100%;
+        height: 280px;
+        position: relative;
+    }
+    .proj-tags-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+    .proj-tag {
+        border-radius: 20px;
+        border: 1px solid var(--black);
+        padding: 3px 8px;
+    }
+
+
+
+    /*For About me*/
+    .abount-me-desc1 {
+        width: 600px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .content1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 80px;
+    }
+
+    .square1, .square2, .square3, .square4 {
+        width: 180px; /*From 200*/
+        height: 180px; /*From 200*/
+        border-radius: 30px;
+        position: absolute;
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        filter: blur(5px);
+    }
+    
+    .square1 {
+        background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
+        top: -120px;
+        left: -120px;
+    }
+    
+    .square2 {
+        background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
+        top: -120px;
+        right: -120px;
+    }
+    
+    .square3 {
+        background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
+        bottom: -120px;
+        left: -120px;
+    }
+    
+    .square4 {
+        background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
+        bottom: -120px;
+        right: -120px;
+    }
+    
+    .my-pic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 400px; /*From 500*/
+        height: 400px; /*From 500*/
+        border-radius: 30px;
+        overflow: hidden;
+        
+    }
+
+
+
+
+    /*For Content 2(Projects)*/
+    .project {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 350px;
+        height: 350px;
+        border-radius: 30px;
+        background: var(--white);
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        cursor: pointer;
+    }
+    .proj-pic {
+        width: 100%;
+        height: 280px;
+        position: relative;
+    }
+    .proj-tags-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+    .proj-tag {
+        border-radius: 20px;
+        border: 1px solid var(--black);
+        padding: 3px 8px;
+    }
+
+
+
+    /*For About me*/
+    .abount-me-desc1 {
+        width: 600px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1152px) {
+    .content1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 80px;
+    }
+    .content1-pic {
+        position: relative;
+        margin-right: 120px;
+    }
+    
+    .content1-text {
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        z-index: 2;
+    }
+
+    .square1, .square2, .square3, .square4 {
+        display: none;
+        width: 180px; /*From 200*/
+        height: 180px; /*From 200*/
+        border-radius: 30px;
+        position: absolute;
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        filter: blur(5px);
+        z-index: 0;
+    }
+    
+    .square1 {
+        background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
+        top: -120px;
+        left: -120px;
+    }
+    
+    .square2 {
+        background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
+        top: -120px;
+        right: -120px;
+    }
+    
+    .square3 {
+        background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
+        bottom: -120px;
+        left: -120px;
+    }
+    
+    .square4 {
+        background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
+        bottom: -120px;
+        right: -120px;
+    }
+    
+    .my-pic {
+        display: none;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 400px; /*From 500*/
+        height: 400px; /*From 500*/
+        border-radius: 30px;
+        overflow: hidden;
+        
+    }
+
+
+
+
+    /*For Content 2(Projects)*/
+    .project {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 450px;
+        height: 450px;
+        border-radius: 30px;
+        background: var(--white);
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        cursor: pointer;
+    }
+    .proj-pic {
+        width: 100%;
+        height: 280px;
+        position: relative;
+    }
+    .proj-tags-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+    .proj-tag {
+        border-radius: 20px;
+        border: 1px solid var(--black);
+        padding: 3px 8px;
+    }
+
+
+
+    /*Content 3*/
+    .content3 {
+        width: 100%;
+        min-height: 100vh;
+        padding: 80px;
+    }
+    .about-me-cont1 {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+        justify-content: space-between;
+    }
+    .abount-me-desc1 {
+        width: 450px;
+        font-size: 20px;
+    }
+    .about-me-pfp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 380px;
+        height: 380px;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .about-me-cont2 {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+    }
+    .exp-pfp {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
+        background: aliceblue;
+    }
+    .skill-box {
+        display: flex;
+        gap: 30px;
+    }
+    .exp-txt {
+        display: flex;
+        align-items: center;
+        width:700px;
+        font-size: var(--txt-l3);
+    }
+
+}
