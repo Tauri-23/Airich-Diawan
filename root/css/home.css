@@ -29,24 +29,31 @@
     background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
     top: -120px;
     left: -120px;
+    animation: squares-home-content1 5s infinite;
 }
 
 .square2 {
     background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
     top: -120px;
     right: -120px;
+    animation: squares-home-content1 5s infinite;
+    animation-delay: 1s;
 }
 
 .square3 {
     background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
     bottom: -120px;
     left: -120px;
+    animation: squares-home-content1 5s infinite;
+    animation-delay: 2s;
 }
 
 .square4 {
     background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
     bottom: -120px;
     right: -120px;
+    animation: squares-home-content1 5s infinite;
+    animation-delay: 3s;
 }
 
 .my-pic {

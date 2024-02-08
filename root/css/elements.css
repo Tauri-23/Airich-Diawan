@@ -17,8 +17,14 @@
 .nav1-logo {
     font-size: var(--txt-m1);
     display: flex;
+    gap: 10px;
     align-items: center;
     font-weight: bold;
+    font-size: 25px;
+}
+.nav1-logo img {
+    width: 30px;
+    height: 30px;
 }
 .nav1-links {
     display: flex;
