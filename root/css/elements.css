@@ -60,3 +60,39 @@
     color: var(--white);
     font-size: 30px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .nav-cont {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 20;
+    }
+    .nav1 {
+        display: flex;    
+        justify-content: space-between;
+        padding: 10px 30px;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .nav1-links {
+        display: none;
+        gap: 20px;
+    
+    }
+
+    .footer {
+        width: 100%;
+        background-color: var(--black);
+        padding: 120px 30px;
+        color: var(--white);
+    }
+    .footer-social-icons {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 30px;
+    }
+}
