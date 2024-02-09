@@ -658,6 +658,9 @@
 
     .square1, .square2, .square3, .square4 {
         display: none;
+    }
+
+    .square5, .square6 {
         width: 180px; /*From 200*/
         height: 180px; /*From 200*/
         border-radius: 30px;
@@ -665,43 +668,26 @@
         filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
         filter: blur(5px);
         z-index: 0;
+        animation-timing-function: linear;
     }
-    
-    .square1 {
-        background-image: linear-gradient(to bottom right, rgba(0, 41, 255, 1), rgba(0, 255, 178, 0.7));
-        top: -120px;
-        left: -120px;
-    }
-    
-    .square2 {
-        background-image: linear-gradient(to bottom right, rgba(66, 255, 0, 1), rgba(143, 0, 255, 1));
-        top: -120px;
-        right: -120px;
-    }
-    
-    .square3 {
+
+    .square5 {
         background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
-        bottom: -120px;
-        left: -120px;
+        top: 150px;
+        left: 30px;
+        animation: squares-home-content1-v2 10s infinite;
     }
     
-    .square4 {
+    .square6 {
         background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
-        bottom: -120px;
-        right: -120px;
+        top: 300px;
+        right: 30px;
+        animation: squares-home-content1-v2 10s infinite;
+        animation-direction: reverse;
     }
     
     .my-pic {
-        display: none;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 400px; /*From 500*/
-        height: 400px; /*From 500*/
-        border-radius: 30px;
-        overflow: hidden;
-        
+        display: none;        
     }
 
 
