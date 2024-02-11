@@ -56,6 +56,10 @@
     animation-delay: 3s;
 }
 
+.square5,.square6 {
+    display: none;
+}
+
 .my-pic {
     display: flex;
     justify-content: center;
@@ -661,6 +665,7 @@
     }
 
     .square5, .square6 {
+        display: block;
         width: 180px; /*From 200*/
         height: 180px; /*From 200*/
         border-radius: 30px;
