@@ -103,4 +103,21 @@ $(document).ready(function () {
 
 
 
+
+    //For nav-burger-icon 
+    $('.nav-burger-icon').click(function(){
+		$(this).toggleClass('open');
+        $('.nav1-links-mobile').toggleClass('d-none');
+
+        
+	});
+
+    $('.nav1-links-a').on('click', function() {
+        $('.nav1-links-mobile').toggleClass('d-none');
+        $('.nav-burger-icon').toggleClass('open');
+    });
+
+
+
+
 });

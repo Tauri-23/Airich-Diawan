@@ -666,8 +666,8 @@
 
     .square5, .square6 {
         display: block;
-        width: 180px; /*From 200*/
-        height: 180px; /*From 200*/
+        width: 170px; /*From 200*/
+        height: 170px; /*From 200*/
         border-radius: 30px;
         position: absolute;
         filter: drop-shadow(3px 3px 5px rgb(148, 148, 148));
@@ -679,14 +679,14 @@
     .square5 {
         background-image: linear-gradient(to bottom right, rgba(255, 72, 215, 1), rgba(0, 178, 255, 0.85));
         top: 150px;
-        left: 30px;
+        left: 35px;
         animation: squares-home-content1-v2 10s infinite;
     }
     
     .square6 {
         background-image: linear-gradient(to bottom right, rgba(204, 255, 58, 1), rgba(0, 255, 178, 0.7));
         top: 300px;
-        right: 30px;
+        right: 35px;
         animation: squares-home-content1-v2 10s infinite;
         animation-direction: reverse;
     }
