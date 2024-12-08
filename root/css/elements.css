@@ -49,7 +49,28 @@
 .nav1-links-active {
     background: var(--blue);
     color: var(--white);
+}
 
+
+/* Buttons */
+.primary-btn-blue1 {
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.primary-btn-blue1 {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.secondary-btn-blue1 {
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.secondary-btn-blue1 {
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
 
 
