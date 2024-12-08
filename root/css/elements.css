@@ -7,8 +7,8 @@
 .nav1 {
     display: flex;    
     justify-content: space-between;
-    padding: 10px 80px;
-    background: rgba(255, 255, 255, 0.25);
+    padding: 15px 80px;
+    background: rgb(255, 255, 255);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -42,7 +42,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--black);
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 10px;
     font-size: var(--txt-m1);
 }

@@ -14,27 +14,81 @@ $(document).ready(function () {
     const projectLink = $('#proj-nav-link');
     const aboutLink = $('#about-nav-link');
 
+    const projects = [
+        {
+            id: 1,
+            name: "PemboPay",
+            desc: "A Payroll System Web Application.",
+            image: "PemboPay Dashboard.png",
+            categories: ["School Project", "UX/UI", "Payroll"]
+        },
+        {
+            id: 2,
+            name: "Furiagana Web",
+            desc: "An E-book Web Application.",
+            image: "FuriganaWebDashboard.png",
+            categories: ["School Project", "E-Book"]
+        },
+        {
+            id: 3,
+            name: "Angels Burger",
+            desc: "Burger Website.",
+            image: "AngelsBurger1stYear.png",
+            categories: ["School Project", "Static Website"]
+        },
+        {
+            id: 4,
+            name: "Happy Tails",
+            desc: "Pet Grooming Web Application.",
+            image: "HappyTails.png",
+            categories: ["School Project", "Pet Grooming"]
+        },
+        {
+            id: 5,
+            name: "BDDRHomes",
+            desc: "Project Selling Web Application for BDDRealty & Contruction Works.",
+            image: "bddrhomes.png",
+            categories: ["Thesis", "Real Estate", "Hybrid Filtering"]
+        },
+        {
+            id: 6,
+            name: "Ortegas Drugstore",
+            desc: "Point of Sales system for Ortegas Drugstore.",
+            image: "ortegasmeds.png",
+            categories: ["Commision", "POS"]
+        },
+        {
+            id: 7,
+            name: "Barangay Sinbanali",
+            desc: "A Web Application for Barangay Sinbanali",
+            image: "bddrhomes.png",
+            categories: ["Commission", "Document Request", "Emergency Call", "Scheduling System"]
+        },
+    ];
 
 
-    //For "Projects" Script
+
+    /**
+     * For "Projects" Script
+     */
     webProjBtn.on('click', () => {
         hideAllContainer();
         removeActiveBtns();
-        webProjBtn.addClass('project-classification-active');
+        webProjBtn.addClass('active');
         webApplicationProjCont.removeClass('d-none');
     });
 
     deskProjBtn.on('click', () => {
         hideAllContainer();
         removeActiveBtns();
-        deskProjBtn.addClass('project-classification-active');
+        deskProjBtn.addClass('active');
         deskAppProjCont.removeClass('d-none');
     });
 
     androidProjBtn.on('click', () => {
         hideAllContainer();
         removeActiveBtns();
-        androidProjBtn.addClass('project-classification-active');
+        androidProjBtn.addClass('active');
         androidProjCont.removeClass('d-none');
     });
 
@@ -46,10 +100,40 @@ $(document).ready(function () {
     }
 
     function removeActiveBtns() {
-        webProjBtn.removeClass('project-classification-active');
-        deskProjBtn.removeClass('project-classification-active');
-        androidProjBtn.removeClass('project-classification-active');
+        webProjBtn.removeClass('active');
+        deskProjBtn.removeClass('active');
+        androidProjBtn.removeClass('active');
     }
+
+    projects.forEach((proj, index) => {
+        const categories = proj.categories
+            .map((cat) => `<div class="proj-tag">${cat}</div>`)
+            .join(""); // Combine the array of strings into a single string.
+    
+        webApplicationProjCont.append(`
+            <div class="project">
+                <div class="proj-pic">
+                    <img src="root/media/${proj.image}" class="position-absolute h-100" alt="${proj.name}">
+                </div>
+    
+                <div class="padding-x-2 d-flex flex-direction-y gap3">
+                    <div class="proj-tags-cont">
+                        ${categories} <!-- Insert the processed categories string here -->
+                    </div>
+    
+                    <div>
+                        <p class="txt-l3 fw-bold">
+                            ${proj.name}
+                        </p>
+                        <p class="txt-m2">
+                            ${proj.desc}
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        `);
+    });    
     //End For "Projects" Script
 
 
