@@ -3,6 +3,7 @@ $(document).ready(function () {
     const webProjBtn = $('#web-proj-btn');
     const deskProjBtn = $('#desktop-proj-btn');
     const androidProjBtn = $('#android-proj-btn');
+    const dlResumeBtn = $('#dl-resume-btn');
 
     //containers
     const webApplicationProjCont = $('#web-app-projects');
@@ -65,6 +66,25 @@ $(document).ready(function () {
             categories: ["Commission", "Document Request", "Emergency Call", "Scheduling System"]
         },
     ];
+
+
+
+
+
+    /**
+     * Download Resume
+     */
+    dlResumeBtn.click(() => {
+        const link = $("<a>")
+            .attr("href", "../root/media/resume.pdf") // Path to the PDF file
+            .attr("download", "resume.pdf") // Default file name for the downloaded file
+            .appendTo("body"); // Append the link to the body temporarily
+
+        link[0].click(); // Trigger the click event on the native DOM element
+        link.remove(); // Remove the link after triggering the download
+    });
+
+
 
 
 
