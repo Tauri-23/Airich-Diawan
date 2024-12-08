@@ -196,6 +196,33 @@
 
 
 
+.cert-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+}
+.cert-pic {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: flex;    
+    filter: drop-shadow(0 0 3px rgb(148, 148, 148));
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cert-pic img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
 
 
 

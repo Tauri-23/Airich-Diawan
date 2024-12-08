@@ -61,7 +61,7 @@ $(document).ready(function () {
             id: 7,
             name: "Barangay Sinbanali",
             desc: "A Web Application for Barangay Sinbanali",
-            image: "bddrhomes.png",
+            image: "brgysinbanali.PNG",
             categories: ["Commission", "Document Request", "Emergency Call", "Scheduling System"]
         },
     ];
