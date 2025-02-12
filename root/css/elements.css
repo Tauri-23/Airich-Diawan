@@ -53,13 +53,18 @@
 
 
 /* Buttons */
-.primary-btn-blue1 {
+.primary-btn-blue1, .primary-btn-special1 {
     padding: 8px 10px;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
 }
 .primary-btn-blue1 {
     background: var(--blue);
+    color: var(--white);
+}
+.primary-btn-special1 {
+    background: hotpink;
     color: var(--white);
 }
 

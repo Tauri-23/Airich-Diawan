@@ -59,3 +59,19 @@
         border-radius: 100%;
     }
 }
+
+@-webkit-keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 10px #ffd4d4) 
+              drop-shadow(0 0 15px #ffd4ea) 
+              drop-shadow(0 0 20px #f8a2cd) 
+              drop-shadow(0 0 25px #fd67b2);
+    }
+    100% {
+      filter: drop-shadow(0 0 20px #ffdcdc) 
+              drop-shadow(0 0 25px #ff4da6) 
+              drop-shadow(0 0 30px #ff4da6) 
+              drop-shadow(0 0 35px #ff4da6);
+    }
+  }
+  

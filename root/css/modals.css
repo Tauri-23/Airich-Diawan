@@ -1,0 +1,22 @@
+.modal1 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    z-index: 21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box-small {
+    width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--white);
+    filter: drop-shadow(0 0 3px #414141);
+}
+
+.modal-box-small.special {
+    background: pink;
+}

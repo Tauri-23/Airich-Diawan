@@ -1,0 +1,22 @@
+.edit-text-1, .edit-text-2, .edit-text-3 {
+    padding: 8px 10px;
+    background: var(--white2);
+    border: 1px solid var(--white3);
+    outline-color: var(--blue1);
+    border-radius: 5px;
+}
+.edit-text-2 {
+    outline-color: var(--red1);
+}
+.edit-text-3 {
+    border: 1px solid var(--black1);
+}
+.edit-text-1.disabled {
+    background: none;
+    outline: none;
+    border: none;
+}
+.edit-text-1.invalid {
+    border: 1px solid var(--red1);
+    outline-color: var(--red1);
+}
